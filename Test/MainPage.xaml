@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25"
+        VerticalOptions="Center">
+            <Entry FontSize="18" Placeholder="Vul hier een tekst in" x:Name="UserEntry"></Entry>
+            <Slider ValueChanged="Slider_ValueChanged" Minimum="0" Maximum="100"  ></Slider>
+            <Button Text="Vertaal" FontSize="18" Clicked="OnCounterClicked"></Button>
+            <Label FontSize="18" Padding="10" BackgroundColor="LightGray" x:Name="UserLbl"></Label>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
